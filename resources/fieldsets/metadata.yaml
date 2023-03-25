@@ -1,0 +1,33 @@
+title: Metadata
+fields:
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: type
+    field:
+      options:
+        article: null
+        book: null
+        profile: null
+        website: null
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      default: article
+      display: Type
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible

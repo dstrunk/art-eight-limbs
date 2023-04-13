@@ -23,7 +23,6 @@ class CreateWeeklyPosts implements ShouldQueue
     {
         $entries = new Collection();
         foreach (range(1,  5) as $i) {
-            Entry::make();
             $entries->add(Entry::make()
                 ->published(false)
                 ->collection('posts')

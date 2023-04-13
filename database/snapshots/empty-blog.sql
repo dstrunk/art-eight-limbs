@@ -107,7 +107,7 @@ CREATE TABLE `entries` (
   `data` json NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `openai_status` enum('pending','generating topic','generating content','generating content images','generating excerpt','generating featured image','complete','failed') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `openai_status` enum('pending','generating topic','generating content','generating content images','generating excerpt','generating featured image','complete','failed') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'complete',
   PRIMARY KEY (`id`),
   KEY `entries_origin_id_foreign` (`origin_id`),
   KEY `entries_site_index` (`site`),

@@ -8,7 +8,6 @@ use Statamic\Facades\Entry;
 
 class PostController extends Controller
 {
-    #[Route('get', 'posts', 'posts.index')]
     public function index(): View
     {
         return view('posts.index', [
@@ -17,7 +16,6 @@ class PostController extends Controller
         ]);
     }
 
-    #[Route('get', 'posts/{slug}', 'posts.show')]
     public function show(string $slug): View
     {
         return view('posts.show', [

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
-use Spatie\RouteAttributes\Attributes\Route;
 use Statamic\Facades\Entry;
 
 class PostController extends Controller

@@ -1,5 +1,5 @@
 <div class="flex max-w-3xl flex-col space-y-16">
-    <article class="md:grid md:grid-cols-4 md:items-baseline">
+    <article class="md:grid md:grid-cols-4 md:items-baseline py-8">
         <div class="md:col-span-3 group relative flex flex-col items-start">
             <h2 class="text-base font-semibold tracking-tight text-zinc-800">
                 <div class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"></div>

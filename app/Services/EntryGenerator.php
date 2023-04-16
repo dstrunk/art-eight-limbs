@@ -74,7 +74,7 @@ class EntryGenerator
                 ],
                 [
                     'role' => 'user',
-                    'content' => "Provide two to three sentences summarizing the following blog post: {$entry->content}.",
+                    'content' => "Provide a maximum of two to three sentences summarizing the following blog post: {$entry->content}.",
                 ],
             ],
         ]);

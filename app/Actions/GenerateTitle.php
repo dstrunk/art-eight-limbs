@@ -19,7 +19,7 @@ class GenerateTitle
                 ->set('openai_status', EntryStatus::GeneratingTitle->value)
                 ->data([
                     ...$entry->data()->toArray(),
-                    'title' => $this->entryGenerator->generateTitle(),
+                    'title' => trim($this->entryGenerator->generateTitle(), '"'),
                 ]);
 
             return $next($entry);

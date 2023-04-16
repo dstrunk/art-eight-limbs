@@ -15,9 +15,11 @@
                                     <time datetime="{{ $post->created_at }}" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">{{ $post->created_at->diffForHumans() }}</time>
                                 </header>
 
-                                <div class="prose mt-8">
-                                    {!! \Statamic\Facades\Markdown::parse($post->content) !!}
-                                </div>
+                                @if ($post->content)
+                                    <div class="prose mt-8">
+                                        {!! \Statamic\Facades\Markdown::parse($post->content) !!}
+                                    </div>
+                                @endif
                             </article>
                         </div>
                     </div>

@@ -13,6 +13,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Routing\Pipeline;
+use Illuminate\Support\Carbon;
 use Statamic\Facades\Entry;
 
 class CreateWeeklyPosts implements ShouldQueue
@@ -28,8 +29,8 @@ class CreateWeeklyPosts implements ShouldQueue
                 ->collection('posts')
                 ->set('site', 'default')
                 ->set('status', 'scheduled')
-                ->set('created_at', now())
-                ->set('updated_at', now())
+                ->set('created_at', Carbon::now()->addDays($i))
+                ->set('updated_at', Carbon::now()->addDays($i))
                 ->set('openai_status', EntryStatus::Pending->value)
             );
         }

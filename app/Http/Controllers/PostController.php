@@ -14,7 +14,8 @@ class PostController extends Controller
             'posts' => Entry::all()
                 ->where('collection', '=', 'posts')
                 ->where('published', '=', true)
-                ->where('date', '<=', Carbon::now()),
+                ->where('date', '<=', Carbon::now())
+                ->sortDesc(),
         ]);
     }
 

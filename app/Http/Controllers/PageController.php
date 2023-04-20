@@ -19,7 +19,7 @@ class PageController extends Controller
                 ->where('collection', 'posts')
                 ->where('published', true)
                 ->where('date', '<=', Carbon::now())
-                ->sortDesc(),
+                ->sortBy('date'),
         ]);
     }
 

@@ -15,7 +15,7 @@ class PostController extends Controller
                 ->where('collection', '=', 'posts')
                 ->where('published', '=', true)
                 ->where('date', '<=', Carbon::now())
-                ->sortBy('date', SORT_ASC),
+                ->sortByDesc('date'),
         ]);
     }
 

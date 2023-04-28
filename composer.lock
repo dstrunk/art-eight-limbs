@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "564c63e398649e9e2c62f4659dbe8222",
+    "content-hash": "1357ae1a2b38acdad3bd0cd783301316",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -5598,16 +5598,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.4.7",
+            "version": "v3.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "9af1bdd04382577ab05acc42a9353aab83bb6bfd"
+                "reference": "5b23b4efa12053533abacf17a239d4092bdd6709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/9af1bdd04382577ab05acc42a9353aab83bb6bfd",
-                "reference": "9af1bdd04382577ab05acc42a9353aab83bb6bfd",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/5b23b4efa12053533abacf17a239d4092bdd6709",
+                "reference": "5b23b4efa12053533abacf17a239d4092bdd6709",
                 "shasum": ""
             },
             "require": {
@@ -5630,7 +5630,7 @@
                 "spatie/blink": "^1.1.2",
                 "statamic/stringy": "^3.1.2",
                 "symfony/http-foundation": "^4.3.3 || ^5.1.4 || ^6.0",
-                "symfony/lock": "^5.1",
+                "symfony/lock": "^5.4",
                 "symfony/var-exporter": "^4.3 || ^5.1 || ^6.0",
                 "symfony/yaml": "^4.1 || ^5.1 || ^6.0",
                 "ueberdosis/tiptap-php": "^1.1",
@@ -5686,7 +5686,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.4.7"
+                "source": "https://github.com/statamic/cms/tree/v3.4.8"
             },
             "funding": [
                 {
@@ -5694,7 +5694,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-20T20:19:25+00:00"
+            "time": "2023-04-25T17:53:29+00:00"
         },
         {
             "name": "statamic/eloquent-driver",

@@ -4,6 +4,7 @@ namespace App\Actions;
 use App\Enums\EntryStatus;
 use App\Services\EntryGenerator;
 use Illuminate\Support\Facades\Log;
+use Statamic\Support\Str;
 
 class GenerateTitle
 {
@@ -14,12 +15,15 @@ class GenerateTitle
     public function handle(\Statamic\Contracts\Entries\Entry $entry, \Closure $next)
     {
         try {
+            $title = $this->entryGenerator->generateTitle();
+
             $entry
                 ->published(false)
                 ->set('openai_status', EntryStatus::GeneratingTitle->value)
                 ->data([
                     ...$entry->data()->toArray(),
-                    'title' => trim($this->entryGenerator->generateTitle(), '"'),
+                    'title' => trim($title, '"'),
+                    'slug' => Str::slug($title),
                 ]);
 
             return $next($entry);

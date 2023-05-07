@@ -98,6 +98,8 @@ return [
         */
 
         'presets' => [
+            'twitter' => ['w' => 600, 'h' => 314, 'q' => 90, 'fit' => 'crop_focal'],
+            'facebook' => ['w' => 1200, 'h' => 630, 'q' => 90, 'fit' => 'crop_focal'],
             // 'small' => ['w' => 200, 'h' => 200, 'q' => 75, 'fit' => 'crop'],
         ],
 

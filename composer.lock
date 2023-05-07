@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1357ae1a2b38acdad3bd0cd783301316",
+    "content-hash": "b4f2ab44af28357c123d23527d40b08c",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -5598,16 +5598,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.4.8",
+            "version": "v3.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "5b23b4efa12053533abacf17a239d4092bdd6709"
+                "reference": "5d148974df5d956ed6ad77bd4c88973aae5113cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/5b23b4efa12053533abacf17a239d4092bdd6709",
-                "reference": "5b23b4efa12053533abacf17a239d4092bdd6709",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/5d148974df5d956ed6ad77bd4c88973aae5113cb",
+                "reference": "5d148974df5d956ed6ad77bd4c88973aae5113cb",
                 "shasum": ""
             },
             "require": {
@@ -5686,7 +5686,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.4.8"
+                "source": "https://github.com/statamic/cms/tree/v3.4.11"
             },
             "funding": [
                 {
@@ -5694,7 +5694,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-25T17:53:29+00:00"
+            "time": "2023-05-06T20:48:08+00:00"
         },
         {
             "name": "statamic/eloquent-driver",

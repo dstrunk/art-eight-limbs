@@ -1,4 +1,12 @@
 <x-layout>
+    <x-slot:meta>
+        <x-meta :title="$post->title"
+                :description="$post->excerpt"
+                :image="$post->featured_image"
+                :url="route('posts.show', ['slug' => $post->slug])"
+        />
+    </x-slot:meta>
+
     <x-slot:title>
         {{ $post->title }} | Art of Eight Limbs
     </x-slot:title>

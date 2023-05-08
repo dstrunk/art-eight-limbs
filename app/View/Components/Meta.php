@@ -4,6 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 use Illuminate\View\View;
+use Statamic\Assets\Asset;
 
 class Meta extends Component
 {
@@ -11,11 +12,11 @@ class Meta extends Component
         public string $title,
         public string $url,
         public ?string $description,
-        public ?object $image,
+        public ?Asset $image,
         public ?string $type = 'article',
     ) {
         $this->description ??= '';
-        $this->image ??= new \stdClass();
+        $this->image ??= '';
         $this->url ??= '';
     }
 

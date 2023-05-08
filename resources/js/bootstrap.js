@@ -1,3 +1,7 @@
+import.meta.glob([
+    '../images/**',
+]);
+
 import Alpine from 'alpinejs';
 import _ from 'lodash';
 

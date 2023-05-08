@@ -2,7 +2,7 @@
     <x-slot:meta>
         <x-meta :title="$post->title"
                 :description="$post->excerpt"
-                :image="$post->featured_image"
+                :image='Statamic::tag("asset")->param("src", "/storage/{$post->featured_image}")->fetch()'
                 :url="route('posts.show', ['slug' => $post->slug])"
         />
     </x-slot:meta>

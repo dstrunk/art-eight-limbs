@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Actions;
+
 use App\Enums\EntryStatus;
 use App\Services\EntryGenerator;
 use Illuminate\Support\Facades\Log;

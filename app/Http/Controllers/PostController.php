@@ -11,11 +11,12 @@ class PostController extends Controller
     public function index(): View
     {
         return view('posts.index', [
-            'posts' => Entry::all()
+            'posts' => Entry::query()
                 ->where('collection', '=', 'posts')
                 ->where('published', '=', true)
                 ->where('date', '<=', Carbon::now())
-                ->sortByDesc('date'),
+                ->orderBy('date', 'desc')
+                ->paginate(1),
         ]);
     }
 

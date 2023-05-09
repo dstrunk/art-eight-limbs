@@ -19,6 +19,8 @@
                             @empty
                                 <p>No posts!</p>
                             @endforelse
+
+                            {{ $posts->links() }}
                         </div>
                     </div>
                 </div>

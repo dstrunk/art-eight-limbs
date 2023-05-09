@@ -16,7 +16,7 @@ class PostController extends Controller
                 ->where('published', '=', true)
                 ->where('date', '<=', Carbon::now())
                 ->orderBy('date', 'desc')
-                ->paginate(1),
+                ->paginate(10),
         ]);
     }
 

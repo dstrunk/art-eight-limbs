@@ -13,6 +13,7 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "nwilging/laravel-discord-bot": "^1.1",
         "openai-php/laravel": "^0.4.1",
         "spatie/laravel-db-snapshots": "^2.5",
         "statamic/cms": "^3.4",

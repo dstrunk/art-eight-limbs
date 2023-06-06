@@ -11,15 +11,12 @@ class PageController extends Controller
     public function index(): View
     {
         return view('pages.index', [
-            'pages' => Entry::all()
-                ->where('collection', 'pages')
-                ->where('published', true)
-                ->where('date', '<=', Carbon::now()),
-            'posts' => Entry::all()
+            'posts' => Entry::query()
                 ->where('collection', 'posts')
                 ->where('published', true)
                 ->where('date', '<=', Carbon::now())
-                ->sortByDesc('date'),
+                ->orderBy('date', 'desc')
+                ->paginate(8)
         ]);
     }
 

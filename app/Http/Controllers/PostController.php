@@ -8,18 +8,6 @@ use Statamic\Facades\Entry;
 
 class PostController extends Controller
 {
-    public function index(): View
-    {
-        return view('posts.index', [
-            'posts' => Entry::query()
-                ->where('collection', '=', 'posts')
-                ->where('published', '=', true)
-                ->where('date', '<=', Carbon::now())
-                ->orderBy('date', 'desc')
-                ->paginate(10),
-        ]);
-    }
-
     public function show(string $slug): View
     {
         return view('posts.show', [
